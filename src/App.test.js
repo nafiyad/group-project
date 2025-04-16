@@ -1,8 +1,14 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test('renders group number', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const groupElement = screen.getByText(/Group 11/i);
+  expect(groupElement).toBeInTheDocument();
+});
+
+test('renders team member name', () => {
+  render(<App />);
+  const memberElement = screen.getByText(/Nafiyad Adane Gudina/i);
+  expect(memberElement).toBeInTheDocument();
 });
