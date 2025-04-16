@@ -6,7 +6,7 @@
     "containerDefinitions": [
         {
             "name": "final",
-            "image": "679907953987.dkr.ecr.us-east-2.amazonaws.com/group11-app:latest",
+            "image": "679907953987.dkr.ecr.us-east-2.amazonaws.com/my-react-app-image:latest",
             "portMappings": [
                 {
                     "name": "ngnix-80-tcp",
@@ -24,4 +24,4 @@
     "memory": "512",
     "cpu": "256",
     "executionRoleArn": "arn:aws:iam::679907953987:role/ecsTaskExecutionRole"
-} 
+}
